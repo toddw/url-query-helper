@@ -7,7 +7,7 @@ Dependens on Underscore.js http://underscorejs.org/
 
 Example
 =======
-``
+<code>
   var urlQueryHelper = new UrlQueryHelper("http://www.example.com/?name=Todd&location=Beach&activity=Surfing");
   urlQueryHelper.getParam("location") // returns "Beach"
 
@@ -27,10 +27,7 @@ Example
   // You may also set new params inline
   var urlQueryHelper = new UrlQueryHelper("http://www.example.com/?name=Todd", {name: "Ted", location: "beach"});
   urlQueryHelper.getUrl() // returns "http://www.example.com/?name=Ted&location=beach"
-
-  
-
-``
+</code>
 
 Reference (Generated with jsdox)
 ===============================
