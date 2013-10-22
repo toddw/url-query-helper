@@ -82,3 +82,59 @@ Return s a single param from this instance
 
 
 
+**Returns**
+
+*string*,  The value of the requested param
+
+setParam(param, value)
+----------------------
+Update or add a param to this instance
+
+
+
+**Parameters**
+
+**param**:  *string*,  The name of the parameter to add
+
+**value**:  *string*,  The desired value for the given parameter
+
+setParams(paramsHash)
+---------------------
+Update or add multiple parameters at once
+
+
+
+**Parameters**
+
+**paramsHash**:  *object*,  An object with all of the paremters to update or add
+
+removeParam(param)
+------------------
+Remove a parameter from this instance
+
+
+
+**Parameters**
+
+**param**:  *string*,  the name of the parameter to remove
+
+removeParams(Arguments)
+-----------------------
+Remove a list of paremters from this instance
+
+
+
+**Parameters**
+
+**Arguments**:  *...string*,  as a list of param names to remove from this instance
+
+toString()
+----------
+Create a String representation of the UrlQueryHelper
+
+
+
+**Returns**
+
+*string*,  Human-readable representation of UrlQuerHelper
+
