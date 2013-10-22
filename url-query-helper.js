@@ -45,7 +45,7 @@ UrlQueryHelper.prototype = {
       originalParamsArray = self.originalUrl.split('?')[1].split('&');
       _.each(originalParamsArray, function (param) {
         var paramParts = param.split('=');
-        self.params[paramParts[0]] = paramParts[1];
+        self.params[paramParts[0]] = decodeURI(paramParts[1]);
       });
     }
 
@@ -66,7 +66,7 @@ UrlQueryHelper.prototype = {
     var self = this;
     // build new url
     if(_.size(self.params) > 0) {
-      return self.originalUrl.split('?')[0] + '?' + _.map(self.params, function (value, key) { return key + '=' + value }).join('&');
+      return self.originalUrl.split('?')[0] + '?' + _.map(self.params, function (value, key) { return key + '=' + encodeURI(value) }).join('&');
     }
     else {
       return self.originalUrl.split('?')[0];
