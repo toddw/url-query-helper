@@ -8,7 +8,7 @@ Dependens on Underscore.js http://underscorejs.org/
 Reference
 ============
 
-UrlQueryHelper(url, updatedParams)
+#### UrlQueryHelper(url, updatedParams)
 ----------------------------------
 Creates an instance of UrlQueryHelper
 
@@ -20,8 +20,7 @@ Creates an instance of UrlQueryHelper
 
 **updatedParams**:  *object*,  An optional object of new or updated parameters that will modify the url
 
-init(url, updatedParams)
-------------------------
+#### init(url, updatedParams)
 The initializing script that gets all of the params from the url query string
 
 
@@ -32,8 +31,7 @@ The initializing script that gets all of the params from the url query string
 
 **updatedParams**:  *object*,  An optional object of new or updated parameters that will modify the url
 
-getUrl()
---------
+#### getUrl()
 Builds and returns a url with the current params for this instance
 
 
@@ -42,8 +40,7 @@ Builds and returns a url with the current params for this instance
 
 *string*,  The url
 
-getParams()
------------
+#### getParams()
 Returns the params object which shows the current state of params for this instance
 
 
@@ -52,8 +49,7 @@ Returns the params object which shows the current state of params for this insta
 
 *object*,  All of the params for this helper
 
-getParam()
-----------
+#### getParam()
 Return s a single param from this instance
 
 
@@ -62,8 +58,7 @@ Return s a single param from this instance
 
 *string*,  The value of the requested param
 
-setParam(param, value)
-----------------------
+#### setParam(param, value)
 Update or add a param to this instance
 
 
@@ -74,8 +69,7 @@ Update or add a param to this instance
 
 **value**:  *string*,  The desired value for the given parameter
 
-setParams(paramsHash)
----------------------
+#### setParams(paramsHash)
 Update or add multiple parameters at once
 
 
@@ -84,8 +78,7 @@ Update or add multiple parameters at once
 
 **paramsHash**:  *object*,  An object with all of the paremters to update or add
 
-removeParam(param)
-------------------
+#### removeParam(param)
 Remove a parameter from this instance
 
 
@@ -94,8 +87,7 @@ Remove a parameter from this instance
 
 **param**:  *string*,  the name of the parameter to remove
 
-removeParams(Arguments)
------------------------
+#### removeParams(Arguments)
 Remove a list of paremters from this instance
 
 
@@ -104,8 +96,7 @@ Remove a list of paremters from this instance
 
 **Arguments**:  *...string*,  as a list of param names to remove from this instance
 
-toString()
-----------
+#### toString()
 Create a String representation of the UrlQueryHelper
 
 
