@@ -11,7 +11,7 @@ Example
   var urlQueryHelper = new UrlQueryHelper("http://www.example.com/?name=Todd&location=Beach&activity=Surfing");
   urlQueryHelper.getParam("location") // returns "Beach"
 
-  urlQueryHelper.setParam("location", "city"); // 
+  urlQueryHelper.setParam("location", "city");
   urlQueryHelper.getUrl() // returns "http://www.example.com/?name=Todd&location=city&activity=Surfing"
 
   urlQueryHelper.setParams({"location": "home", "activity": "reading"});
