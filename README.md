@@ -76,11 +76,15 @@ Returns the params object which shows the current state of params for this insta
 
 *object*,  All of the params for this helper
 
-getParam()
-----------
+getParam(The)
+-------------
 Return s a single param from this instance
 
 
+
+**Parameters**
+
+**The**:  *string*,  name of the parameter to get
 
 **Returns**
 
@@ -137,4 +141,5 @@ Create a String representation of the UrlQueryHelper
 **Returns**
 
 *string*,  Human-readable representation of UrlQuerHelper
+
 
