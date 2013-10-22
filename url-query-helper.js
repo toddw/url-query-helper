@@ -85,7 +85,7 @@ UrlQueryHelper.prototype = {
   /**
    * Return s a single param from this instance
    *
-   * @param {string} The name of the parameter to get
+   * @param {string} param The name of the parameter to get
    * @return {string} The value of the requested param
    */
   getParam: function (param) {
